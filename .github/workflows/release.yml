@@ -35,7 +35,7 @@ jobs:
 
       - name: Upload Artifacts
         run: |
-          mv .build/arm64-apple-macosx/debug/BLEAssignedNumberGenerator ble-assigned-numbers-generator
+          mv .build/arm64-apple-macosx/debug/BLEAssignedNumbersGenerator ble-assigned-numbers-generator
           gh release create "${{ github.ref_name }}" ble-assigned-numbers-generator
         env:
           GITHUB_TOKEN: ${{ github.TOKEN }}
